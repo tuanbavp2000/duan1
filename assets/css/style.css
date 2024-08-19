@@ -1,0 +1,322 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+}
+:root {
+  --color: #021a84;
+  --color-2: #999999;
+}
+
+/*================== common ============ */
+.main-content {
+  width: 1160px;
+  max-width: 100% - 48px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+.btn {
+  display: inline-block;
+  width: 149px;
+  line-height: 44px;
+  border-radius: 8px;
+  border: 1px solid var(--color);
+  text-align: center;
+  font-size: 1.8rem;
+}
+.recland__heading {
+  font-weight: 700;
+  font-size: 3.4rem;
+  background-image: linear-gradient(0deg, #021a84, #021a84),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-clip: text;
+  color: transparent;
+}
+/* ===============================================header ======================= */
+.header__body {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+.header__content {
+  margin-left: auto;
+  width: 163px;
+  line-height: 44px;
+  margin-right: 14px;
+}
+.header__btn {
+  color: var(--color);
+}
+.header__btn:hover {
+  background-color: var(--color);
+  color: #ffffff;
+}
+.header__sign {
+  margin-right: 28px;
+}
+.header__action {
+  position: relative;
+}
+.header__sign::after {
+  display: block;
+  content: " ";
+  width: 17px;
+  height: 1px;
+  border: 1px;
+  background-color: var(--color-2);
+  position: absolute;
+  top: 25px;
+  left: 47.5%;
+  transform: rotate(90deg);
+}
+.header__img {
+  margin: 18px 0 40px;
+  width: 100%;
+  object-fit: cover;
+}
+/*======================================== reacland__search ========================================== */
+
+.recland__top {
+  display: flex;
+  align-items: center;
+  background-color: #ffffffe5;
+  padding: 12px;
+}
+.reacland__keyword {
+  width: 58%;
+  margin-right: 32px;
+  padding: 13px 16px;
+  border-radius: 8px;
+  position: relative;
+  background-color: #ffffff;
+  color: var(--color-2);
+  font-size: 1.4rem;
+  position: relative;
+}
+.reacland__keyword--icon {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+}
+.reacland__keyword::after {
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 1px;
+  background-color: var(--color-2);
+  rotate: 90deg;
+  position: absolute;
+  right: -23px;
+  top: 21px;
+}
+#reacland__keyword--input {
+  width: 100%;
+  margin-left: 15px;
+  border: none;
+  outline: none;
+}
+.reacland__location {
+  width: 23%;
+  margin-right: 12px;
+  padding: 13px 13px 13px 26px;
+  border-radius: 8px;
+  position: relative;
+  background-color: #ffffff;
+  color: var(--color-2);
+}
+.reacland__location--icon {
+  position: absolute;
+  top: 16px;
+  left: 13px;
+}
+#reacland__location--input {
+  width: 100%;
+  border: none;
+  font-size: 1.4rem;
+  color: var(--color-2);
+  height: 24px;
+  outline: none;
+}
+.recland__search--btn {
+  background-color: var(--color);
+  color: #fff;
+}
+/* ========================== recland__bottom ================================ */
+.recland__bottom {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.recland__p {
+  font-size: 1.4rem;
+}
+.recland__link {
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: var(--color-2);
+  font-size: 1.4rem;
+  color: #00000080;
+  border-radius: 8px;
+  margin-right: 8px;
+}
+/* ==================== recland__jobs ================== */
+.recland__jobs {
+  margin-top: 80px;
+}
+.recland__jobs--top {
+  display: flex;
+  align-items: center;
+}
+.recland__jobs--link {
+  margin-left: auto;
+}
+.recland__jobs--logo {
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 9px;
+}
+.recland__jobs--link {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 28px;
+  color: var(--color);
+}
+/* ===================== recland__jobs--bottom ===================== */
+.recland__jobs--bottom {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.recland__content {
+  padding: 16px;
+  border-radius: 16px;
+}
+.recland__content--top {
+  display: flex;
+  align-items: center;
+}
+.recland__label {
+  padding: 4px 8px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  color: var(--color);
+  font-size: 1.2rem;
+}
+.recland__content--time {
+  margin-left: auto;
+}
+.recland__content--name {
+  font-weight: 500;
+  color: #171717;
+  line-height: 16px;
+  margin-left: 8px;
+  align-self: flex-start;
+
+  width: 180px;
+}
+
+.recland__content--center {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.recland__content--price {
+  font-size: 1.2rem;
+  color: var(--color);
+}
+
+.recland__content--price span {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 28px;
+  color: black;
+}
+
+.recland__content--price span span {
+  font-size: 1.3rem;
+  line-height: 16px;
+  color: var(--color-2);
+}
+.recland__content--bottom {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.recland__content--btn {
+  padding: 4px 16px;
+  border-radius: 8px;
+  background-color: #fe4c4c;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #ffffff;
+  line-height: 16px;
+}
+/* =================== why ===================== */
+.why {
+  margin-top: 80px;
+}
+
+.why__top {
+  text-align: center;
+}
+.why__why {
+  font-size: 1.8rem;
+  color: var(--color);
+  line-height: 28px;
+}
+.why__bottom {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.why__item {
+  width: 31.5%;
+  padding: 32px 32px 52px;
+  text-align: center;
+  background-image: linear-gradient(#2ada66, #ffffff99);
+  border-radius: 16px;
+}
+.why__content {
+  margin: 16px;
+}
+.why__content--heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 28px;
+  background-image: linear-gradient(0deg, #2ada66, #2ada66),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+  background-clip: text;
+  color: transparent;
+}
+.why__content--desc {
+  margin-top: 8px;
+  font-size: 1.3rem;
+  line-height: 20px;
+  background-image: linear-gradient(0deg, #2ada66, #2ada66),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+  background-clip: text;
+  color: transparent;
+}
